@@ -39,7 +39,7 @@ TEST_F(SimilarityCheckerFixture, TestGetParitialPoint) {
 	EXPECT_EQ(actual, expected);
 }
 
-TEST_F(SimilarityCheckerFixture, 글자수부분일치2) {
+TEST_F(SimilarityCheckerFixture, TestGetParitialPoint2) {
 	input = { "AA", "AAE" };
 	int expected = 30;
 	int actual = sc.getLenthPoint(input);
