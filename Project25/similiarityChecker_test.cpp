@@ -1,4 +1,4 @@
-#include "gmock/gmock.h"
+ï»¿#include "gmock/gmock.h"
 #include "similarityChecker.cpp"
 #include <vector>
 #include <string>
@@ -13,7 +13,7 @@ TEST(tc1, tc2) {
 	EXPECT_EQ(actual, expected);
 }
 
-TEST(tc1, ±ÛÀÚ¼ö¸®ÅÏ) {
+TEST(tc1, ê¸€ììˆ˜ë¦¬í„´) {
 	SimilarityChecker sc;
 	vector<string>input = { "ABC", "AD" };
 	vector<int>expected = { 3, 2 };
@@ -21,7 +21,7 @@ TEST(tc1, ±ÛÀÚ¼ö¸®ÅÏ) {
 	EXPECT_EQ(actual, expected);
 }
 
-TEST(tc1, ±ÛÀÚ¼ö2¹èÀÌ»óÂ÷ÀÌ) {
+TEST(tc1, ê¸€ììˆ˜2ë°°ì´ìƒì°¨ì´) {
 	SimilarityChecker sc;
 	vector<string>input = { "A", "BB" };
 	int expected = 0;
@@ -29,7 +29,7 @@ TEST(tc1, ±ÛÀÚ¼ö2¹èÀÌ»óÂ÷ÀÌ) {
 	EXPECT_EQ(actual, expected);
 }
 
-TEST(tc1, ±ÛÀÚ¼öÀÏÄ¡) {
+TEST(tc1, ê¸€ììˆ˜ì¼ì¹˜) {
 	SimilarityChecker sc;
 	vector<string>input = { "ABC", "ABC" };
 	int expected = 60;
@@ -37,7 +37,7 @@ TEST(tc1, ±ÛÀÚ¼öÀÏÄ¡) {
 	EXPECT_EQ(actual, expected);
 }
 
-TEST(tc1, ±ÛÀÚ¼öºÎºĞÀÏÄ¡) {
+TEST(tc1, ê¸€ììˆ˜ë¶€ë¶„ì¼ì¹˜) {
 	SimilarityChecker sc;
 	vector<string>input = { "AAABB", "BAA" };
 	int expected = 20;
@@ -45,7 +45,7 @@ TEST(tc1, ±ÛÀÚ¼öºÎºĞÀÏÄ¡) {
 	EXPECT_EQ(actual, expected);
 }
 
-TEST(tc1, ±ÛÀÚ¼öºÎºĞÀÏÄ¡2) {
+TEST(tc1, ê¸€ììˆ˜ë¶€ë¶„ì¼ì¹˜2) {
 	SimilarityChecker sc;
 	vector<string>input = { "AA", "AAE" };
 	int expected = 30;
